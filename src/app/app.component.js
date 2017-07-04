@@ -6,6 +6,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+var Hero = (function () {
+    function Hero() {
+    }
+    return Hero;
+}());
+exports.Hero = Hero;
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Game of Thrones';
@@ -16,7 +22,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <h1>{{title}}</h1>\n  <h2>{{hero.name}} details!</h2>\n  ",
+        template: "\n  <h1>{{title}}</h1>\n  <h2>{{hero}} details!</h2>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

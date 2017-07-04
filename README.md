@@ -21,4 +21,4 @@ $ npm start
 
 
 ### Resources
-[Angular.io tutorial](https://angular.io/guide/setup)
+[Angular.io tutorial](https://angular.io/tutorial)

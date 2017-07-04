@@ -15,14 +15,17 @@ exports.Hero = Hero;
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Game of Thrones';
-        this.hero = 'John Snow';
+        this.hero = {
+            id: 1,
+            name: 'John Snow'
+        };
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <h1>{{title}}</h1>\n  <h2>{{hero}} details!</h2>\n  ",
+        template: "\n  <h1>{{title}}</h1>\n  <h2>{{hero.name}} details!</h2>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

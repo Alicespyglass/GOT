@@ -14,7 +14,7 @@ var DashboardComponent = (function () {
 DashboardComponent = __decorate([
     core_1.Component({
         selector: 'my-dashboard',
-        template: '<h3>MY Dashboard</h3>'
+        template: '<h3>My Dashboard</h3>'
     })
 ], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;

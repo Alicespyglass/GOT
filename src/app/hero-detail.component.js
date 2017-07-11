@@ -19,6 +19,14 @@ var HeroDetailComponent = (function () {
         this.route = route;
         this.location = location;
     }
+    HeroDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.paramMap
+            .switchMap(function (params) {
+            return _this.heroService.getHero(+params.get('id'));
+        })
+            .subscribe(function (hero) { return _this.hero = hero; });
+    };
     return HeroDetailComponent;
 }());
 __decorate([
